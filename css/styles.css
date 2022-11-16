@@ -1,0 +1,238 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 2%;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin: 1%;
+}
+.texto-home{
+    text-align: center;
+    margin: 3%;
+    padding: 1%;
+}
+
+
+/* estilos de menu principaL*/
+
+.navmenu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+/* estilos de titulo*/
+.titulo{
+    text-align: center;
+}
+/* estilos de servicios */
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+.servicio{
+    text-align: center;
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    padding: 10px;
+    border: 3px solid black; 
+    display: inline-block;
+}
+
+.TituloQuienesSomos{
+    text-align: center;
+}
+
+.TextoQuienesSomos{
+    text-align: center;
+    margin: 60px;
+}
+
+.ciudades{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid white; 
+    display: inline-block;
+}
+.clientes{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid white; 
+    display: inline-block;
+}
+.anos{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid white; 
+    display: inline-block;
+}
+
+.tabla-centrada{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tabla-centrada .quienessomos td{
+    border: none;
+    width: 350px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold   ;
+
+}
+
+.tabla-centrada .con-borde td{
+    border: solid 3px black;
+    width: 350px;
+    height: 100px;
+    background-color:#DEDDDC    ;
+}
+
+.letramayor{
+    font-size: 200%;
+}
+
+.img-footer{
+    max-width: 30px;
+}
+
+.texto-footer{
+    text-align: right;
+}
+
+/* FORMULARIO DEL INDEX */
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "mapa mapa nombre nombre mensaje mensaje mensaje mensaje mensaje mensaje"
+      "mapa mapa email email mensaje mensaje mensaje mensaje mensaje mensaje"
+      "mapa mapa asunto asunto asunto asunto asunto asunto enviar enviar";
+    grid-template-rows: 0.3fr 0.3fr 0.3fr; 
+    grid-template-columns: auto
+ }
+ .mapa {
+    grid-area: mapa;
+    text-align: center;
+ }
+ .nombre {
+    grid-area: nombre;
+
+ }
+.mensaje{
+    grid-area: mensaje;   
+
+}
+.email{
+    grid-area: email;     
+
+}
+.asunto{
+    grid-area: asunto;
+ 
+ }
+.enviar{
+    grid-area: enviar;
+
+ }
+ #grilla input{
+    height: 50px;
+    width: 95%;
+ }
+ #grilla input[type=submit]{
+    width: 150px;
+  }
+
+
+/* IMAGEN CONTACTATE */
+.div-contactate{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.imagen-contactate{
+    width: 40%;
+    border-radius: 20px;
+}
+
+ /* FORMULARIO DE SUCURSALES */
+#sucursales {
+    display: grid;
+    grid-template-areas:
+      "map rafaela"
+      "map rosario"
+      "map bsas"
+      "map cordoba"
+      "map rioiv";
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr; 
+    grid-template-columns: auto;
+ }
+ .map {
+    grid-area: map;
+    text-align: center;
+ }
+ .centrado{
+    display: flex;
+    align-items: center;
+ }
+ .rafaela {
+    grid-area: rafaela;
+
+ }
+.rosario{
+    grid-area: rosario;   
+
+}
+.bsas{
+    grid-area: bsas;     
+
+}
+.cordoba{
+    grid-area: cordoba;
+ 
+ }
+.rioiv{
+    grid-area: rioiv;
+
+ }
+
+
