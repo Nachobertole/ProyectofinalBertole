@@ -1,245 +1,91 @@
-/* reset */
+/* comentario en sass y css */
+/*reset*/
+* {
+  margin: 0;
+  padding: 0; }
 
-*{
-    margin: 0;
-    padding: 0;
-}
+body {
+  background-color: #f8f8f8; }
 
-body{
-    background-color: #f8f8f8;
-}
+/* ESTILO DE H1 PARA TODOS LOS HTML*/
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 2%;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: unset; }
 
-h1{
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+main h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 1%; }
+
+main .texto-home {
+  text-align: center;
+  margin: 3%;
+  padding: 1%; }
+
+/* ESTILO FOOTER */
+footer .tabla-centradados {
+  width: 12vh;
+  margin: auto;
+  text-align: center; }
+
+footer .texto-footer {
+  text-align: right; }
+
+/* ESTILO HTML SERVICIOS */
+main .contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  main .contenedor .servicio {
     text-align: center;
-    font-size: 50px;
-    margin: 2%;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
- }
- 
- 
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
- 
-
-h2{
-    text-align: center;
+    font-size: 19px;
     font-weight: bold;
-    margin: 1%;
-}
-.texto-home{
-    text-align: center;
-    margin: 3%;
-    padding: 1%;
-    animation-duration: 3s;
-    animation-name: initial;
-    animation-iteration-count: infinite;
-}
-
-
-/* estilos de titulo*/
-.titulo{
-    text-align: center;
-}
-/* estilos de servicios */
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-
-    
-    
-}
-.servicio{
-    text-align: center;
     background-color: whitesmoke;
-    width: 200px;
-    height: 200px;
+    width: 285px;
+    height: 285px;
     margin: 50px;
     padding: 10px;
-    border: 3px solid black; 
-    display: inline-block;
-}
+    display: inline-block; }
+    main .contenedor .servicio .imagenservicios {
+      width: 63%;
+      height: 63%; }
+    main .contenedor .servicio .detalle-servicio {
+      font-size: 17px;
+      font-weight: lighter; }
 
-.TituloQuienesSomos{
-    text-align: center;
-}
+main .TextoQuienesSomos {
+  text-align: center;
+  margin: 60px; }
 
-.TextoQuienesSomos{
-    text-align: center;
-    margin: 60px;
-}
-
-.ciudades{
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 3px solid white; 
-    display: inline-block;
-}
-.clientes{
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 3px solid white; 
-    display: inline-block;
-}
-.anos{
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 3px solid white; 
-    display: inline-block;
-}
-
-.tabla-centrada{
-    margin: auto;
-    text-align: center;
-}
-.tabla-centradados{
-    width: 12vh;
-    margin: auto;
-    text-align: center;
-}
-
-
-.tabla-centrada .quienessomos td{
+main div .tabla-centrada {
+  margin: auto;
+  text-align: center; }
+  main div .tabla-centrada .quienessomos td {
     border: none;
     width: 350px;
     height: 100px;
     font-size: 20px;
-    font-weight: bold   ;
+    font-weight: bold; }
+    main div .tabla-centrada .quienessomos td .letramayor {
+      font-size: 200%; }
 
-}
-
-.tabla-centrada .con-borde td{
-    border: solid 3px black;
-    width: 350px;
-    height: 100px;
-    background-color: #DEDDDC;
-}
-
-.letramayor{
-    font-size: 200%;
-}
-
-.img-footer{
-    max-width: 30px;
-}
-
-.texto-footer{
-    text-align: right;
-}
-
-/* FORMULARIO DEL INDEX */
-#grilla {
-    display: grid;
-    grid-template-areas:
-      "mapa mapa nombre nombre mensaje mensaje mensaje mensaje mensaje mensaje"
-      "mapa mapa email email mensaje mensaje mensaje mensaje mensaje mensaje"
-      "mapa mapa asunto asunto asunto asunto asunto asunto enviar enviar";
-    grid-template-rows: 0.3fr 0.3fr 0.3fr;
-    grid-template-columns: auto
- }
- .mapa {
-    grid-area: mapa;
-    text-align: center;
- }
- .nombre {
-    grid-area: nombre;
-
- }
-.mensaje{
-    grid-area: mensaje;   
-
-
-}
-.email{
-    grid-area: email;     
-
-}
-.asunto{
-    grid-area: asunto;
- 
- }
-.enviar{
-    grid-area:enviar;
-
- }
- #grilla input{
-    height: 50px;
-    width: 95%;
- }
- #grilla input[type=submit]{
-    width: 150px;
-  }
-
-
-/* IMAGEN CONTACTATE */
-.div-contactate{
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-.imagen-contactate{
+/* ESTILO IMAGEN CONTACTATE */
+.div-contactate {
+  text-align: center;
+  width: 100%;
+  height: auto; }
+  .div-contactate .imagen-contactate {
     width: 40%;
-    border-radius: 20px;
-}
-
- /* FORMULARIO DE SUCURSALES */
-#sucursales {
-    display: grid;
-    grid-template-areas:
-      "map rafaela"
-      "map rosario"
-      "map bsas"
-      "map cordoba"
-      "map rioiv";
-    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr; 
-    grid-template-columns: auto;
- }
- .map {
-    grid-area: map;
-    text-align: center;
- }
- .centrado{
-    display: flex;
-    align-items: center;
- }
- .rafaela {
-    grid-area: rafaela;
-
- }
-.rosario{
-    grid-area: rosario;   
-
-}
-.bsas{
-    grid-area: bsas;     
-
-}
-.cordoba{
-    grid-area: cordoba;
- 
- }
-.rioiv{
-    grid-area: rioiv;
-
- }
-
-
+    border-radius: 20px; }
