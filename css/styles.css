@@ -38,6 +38,10 @@ footer .tabla-centradados {
   margin: auto;
   text-align: center; }
 
+footer .instagram {
+  padding-left: 0.8em;
+  padding-right: 0.8em; }
+
 footer .texto-footer {
   text-align: right; }
 
