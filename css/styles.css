@@ -83,18 +83,6 @@ main .TextoQuienesSomos {
   text-align: center;
   margin: 60px; }
 
-main div .tabla-centrada {
-  margin: auto;
-  text-align: center; }
-  main div .tabla-centrada .quienessomos td {
-    border: none;
-    width: 350px;
-    height: 100px;
-    font-size: 20px;
-    font-weight: bold; }
-    main div .tabla-centrada .quienessomos td .letramayor {
-      font-size: 200%; }
-
 /* ESTILO IMAGEN CONTACTATE */
 .div-contactate {
   text-align: center;
@@ -103,3 +91,25 @@ main div .tabla-centrada {
   .div-contactate .imagen-contactate {
     width: 40%;
     border-radius: 20px; }
+
+/* ESTILO TABLA GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 37vh);
+  grid-template-rows: 75px;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold; }
+  .grid .letramayor {
+    font-size: 200%; }
+
+@media screen and (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, 15vh);
+    font-size: 12.5px; } }
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 20vh);
+    font-size: 16px; } }

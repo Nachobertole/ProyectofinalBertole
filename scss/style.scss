@@ -7,18 +7,18 @@
 @import "utilidades/mixin";
 
 /*reset*/
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
 
-body{
+body {
     background-color: $color-fondo-principal !important;
 }
 
 /* ESTILO DE H1 PARA TODOS LOS HTML*/
-h1{
+h1 {
     text-align: center;
     font-size: 50px;
     margin: 2%;
@@ -27,61 +27,70 @@ h1{
     animation-iteration-count: unset;
     color: $color-principal-texto;
 }
+
 @keyframes aparecer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-main{
-    h2{
+
+main {
+    h2 {
         text-align: center;
         font-weight: bold;
         margin: 1%;
         color: $color-secundario-texto;
     }
-    .texto-home{
+
+    .texto-home {
         text-align: center;
         margin: 3%;
         padding: 1%;
     }
 }
+
 /* ESTILO ANCORD */
-a{
+a {
     color: $color-principal-texto !important;
 }
-a:hover{
+
+a:hover {
     color: $color-secundario-texto !important;
 }
 
 /* ESTILO FOOTER */
 
-footer{
-    .tabla-centradados{
+footer {
+    .tabla-centradados {
         width: 12vh;
         margin: auto;
         text-align: center;
     }
-    .instagram{
+
+    .instagram {
         padding-left: 0.8em;
         padding-right: 0.8em;
     }
-    .texto-footer{
+
+    .texto-footer {
         text-align: right;
     }
 }
 
 /* ESTILO HTML SERVICIOS */
-main{
-    .contenedor{
+main {
+    .contenedor {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        .servicio{
+
+        .servicio {
             text-align: center;
             font-size: 19px;
             font-weight: bold;
@@ -89,45 +98,64 @@ main{
             color: $color-terciario-texto;
             @include medidas (285px, 285px);
             margin: 50px;
-            padding: 10px; 
+            padding: 10px;
             display: inline-block;
-            .imagenservicios{
+
+            .imagenservicios {
                 @include medidas (63%, 63%);
             }
-            .detalle-servicio{
+
+            .detalle-servicio {
                 font-size: 17px;
                 font-weight: lighter;
-            }   
+            }
         }
     }
-    .TextoQuienesSomos{
+
+    .TextoQuienesSomos {
         text-align: center;
         margin: 60px;
     }
-    div{
-        .tabla-centrada{
-            margin: auto;
-            text-align: center;
-            .quienessomos{
-                td{
-                    border: none;
-                    @include medidas (350px, 100px);
-                    font-size: 20px;
-                    font-weight: bold;
-                    .letramayor{
-                        font-size: 200%;
-                    }
-                }
-            }
-        }
-    }
 }
+
 /* ESTILO IMAGEN CONTACTATE */
-.div-contactate{
+.div-contactate {
     text-align: center;
     @include medidas (100%, auto);
-    .imagen-contactate{
+
+    .imagen-contactate {
         width: 40%;
         border-radius: 20px;
     }
 }
+
+
+/* ESTILO TABLA GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 37vh);
+    grid-template-rows: 75px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    .letramayor {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(3,15vh);
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3,20vh);
+        font-size: 16px;
+    }
+}
+  
