@@ -21,11 +21,11 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
-    margin: 2%;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: unset;
     color: $color-principal-texto;
+    margin: 40px 0 40px 0 !important;
 }
 
 @keyframes aparecer {
@@ -84,6 +84,7 @@ footer {
 /* ESTILO HTML SERVICIOS */
 main {
     .contenedor {
+        margin-top: -40px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -128,6 +129,7 @@ main {
         border-radius: 20px;
     }
 }
+
 
 
 /* ESTILO TABLA GRID */

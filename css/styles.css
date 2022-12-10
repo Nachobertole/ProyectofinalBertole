@@ -11,11 +11,11 @@ body {
 h1 {
   text-align: center;
   font-size: 50px;
-  margin: 2%;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: unset;
-  color: #002198; }
+  color: #002198;
+  margin: 40px 0 40px 0 !important; }
 
 @keyframes aparecer {
   0% {
@@ -56,6 +56,7 @@ footer .texto-footer {
 
 /* ESTILO HTML SERVICIOS */
 main .contenedor {
+  margin-top: -40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
