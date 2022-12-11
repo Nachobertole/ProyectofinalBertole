@@ -98,10 +98,17 @@ main {
             background-color: whitesmoke;
             color: $color-terciario-texto;
             @include medidas (285px, 285px);
+            margin: 50px;
+            padding: 10px;
             display: inline-block;
+
+            .coberturas{
+                margin-top:5px
+            }
 
             .imagenservicios {
                 @include medidas (63%, 63%);
+                margin-top:-5px;
             }
 
             .detalle-servicio {
@@ -114,6 +121,8 @@ main {
     .TextoQuienesSomos {
         text-align: center;
         margin: 60px;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 }
 
