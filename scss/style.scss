@@ -98,8 +98,6 @@ main {
             background-color: whitesmoke;
             color: $color-terciario-texto;
             @include medidas (285px, 285px);
-            margin: 50px;
-            padding: 10px;
             display: inline-block;
 
             .imagenservicios {
@@ -141,9 +139,11 @@ main {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 2em;
 
     .letramayor {
         font-size: 200%;
+
     }
 }
 
